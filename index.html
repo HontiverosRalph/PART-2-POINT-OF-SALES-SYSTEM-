@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunnyBite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SunnyBite</h1>
+        <div class="order">
+            <div class="order-item">
+                <label>Menu:</label>
+                <ul id="menu" class="menu">
+                    <li data-value="classic-beef-burger">
+                        <img src="img/f2.png" alt="Classic Beef Burger">
+                        Classic Beef Burger - ₱99.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="cheeseburger-deluxe">
+                        <img src="img/f7.png" alt="Cheeseburger Deluxe">
+                        Cheeseburger Deluxe - ₱129.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="bbq-bacon-burger">
+                        <img src="img/f8.png" alt="BBQ Bacon Burger">
+                        BBQ Bacon Burger - ₱139.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="pepperoni-pizza">
+                        <img src="img/f1.png" alt="Pepperoni Pizza">
+                        Pepperoni Pizza - ₱149.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="veggie-supreme-pizza">
+                        <img src="img/f6.png" alt="Veggie Supreme Pizza">
+                        Veggie Supreme Pizza - ₱159.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="bbq-chicken-pizza">
+                        <img src="img/f3.png" alt="BBQ Chicken Pizza">
+                        BBQ Chicken Pizza - ₱169.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="spaghetti-bolognese">
+                        <img src="img/f4.png" alt="Spaghetti Bolognese">
+                        Spaghetti Bolognese - ₱119.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="creamy-fettuccine-alfredo">
+                        <img src="img/f9.png" alt="Creamy Fettuccine Alfredo">
+                        Creamy Fettuccine Alfredo - ₱129.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                    <li data-value="sweet-potato-fries">
+                        <img src="img/f5.png" alt="Sweet Potato Fries">
+                        Sweet Potato Fries - ₱79.00
+                        <input type="number" class="item-quantity" value="1" min="1">
+                        <button class="add-to-order">Add to Order</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ordered-items">
+            <h2>Ordered Items</h2>
+            <textarea id="orderedItems" rows="5" readonly></textarea>
+        </div>
+        <div class="total">
+            <h2>Total Price</h2>
+            <div id="totalPrice">₱0.00</div>
+        </div>
+        <div class="payment">
+            <label for="paymentAmount">Pay Amount:</label>
+            <input type="text" id="paymentAmount">
+            <button onclick="pay()">Pay</button>
+        </div>
+        <div id="paymentConfirmation" class="hidden">Payment Successful!</div>
+        <div>Total Collected: <span id="totalCollected">₱0.00</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
